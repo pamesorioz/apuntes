@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera web</title>
+</head>
+<body>
+                                <!--Encabezado-->
+    <h1>Este es un titulo</h1> <!--Este titulo se debe de usar uno solo por página-->
+    <h2>Este es un titulo</h2> <!--Todos los demas des pueden repetir-->
+    <h3>Este es un titulo</h3> <!--Para cuestiones de SEO no se pueden repetir palabras claves del titulo principal-->
+    <h4>Este es un titulo</h4>
+    <h5>Este es un titulo</h5>
+    <h6>Este es un titulo</h6>
+    <!--Etiquetas de texto-->
+    <p>Hola <strong>Estoy aprendiendo</strong> a maquetar con HTML</p>
+    <!--
+        <b> = Te hace el texto en "negritas"
+        <strong> = Lo mismo que la etiqueta <b> pero esta es una etiqueta semantica (lo lee el navegador)
+        <i> = Hace el texto en italica.
+        <em> = Lo mismo que la etiqueta <i> pero es una etiqueta semantica
+        <s> = Tacha la palabra o texto que se encuentre en ella. Le indica al navegador que no es relevante.
+        <small> = Cambia de tamaño el texto a una medida menor. Le indica al navegador que es menos relevante.
+        <br> = Es un salto de linea. Es una etiqueta que se cierra por si sola. Pero puedes cerrarla si lo deseas.
+        <span> = Es parta añardir algun atributo, que este dentro de la etiqueta span
+        
+    -->
+
+                            <!--Atributos; id o class-->
+    <!--
+        Se utilizan para darle estilos con CSS o alguna funcionalidad con Javascript.
+        Ejemplo: -->
+    <p id="MiPrimeraWeb">Mi primera Web</p>
+    <style>
+        #MiPrimeraWeb {
+            background: green;
+        }
+    </style>
+    <!--Con el id se podrá agregar un estilo al lo que este incluido en el atributo de la etiqueta, para llamar en CSS el id es con un hash (#-->
+    <p class="MiPrimerWeb">Mi primera Web</p>
+    <style>
+        .MiPrimerWeb {
+            background: blueviolet;
+        }
+    </style>
+    <!--En el caso de la clase se llama con un punto (.) en CSS
+    Por buedas partacticas es recomendable que el id sea usado una sola vez por documento
+    -->
+
+                                <!--Enlaces-->
+    <!--Se tiene el atributo href = que es donde colocará la url donde se mandará el enlce
+    Tambien exite otro atributo llamado target que con la opción _blank se abre el enlace en una nueva pestaña del navegador -->
+    <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    <!--Los enlaces tambien te pueden llevar a rutas internas de tu página
+        Vamos a crear una página de contacto para que se vea el ejemplo.
+    -->
+    <a href="contacto.html" target="_blank">Contacto</a>
+    <!--Ahora te envía a la página interna de contacto-->
+    <!--Pero los enlaces también te pueden mandar a correos para que puedas mandar un correo.
+        este es el siguiente ejemplo:
+    -->
+    <a href="mailto:pamesorio@gmail.com">Dirección Correo</a>
+    <!--Te abre un gestor de correo, que tenga instalada la persona en su computadora-->
+    <!--
+        Con los enlaces tambien puedes moverte en la misma página, para eso haremos el siguiente ejemplo.
+        Haremos 3 secciones con muchos saltos de linea para que pueda hacer un scroll y se puedan mover entre la página.
+    -->
+    <section id="seccion1">
+        <a href="#seccion2">I a sección 2</a>
+    </section>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <section id="seccion2">
+        <a href="#seccion3">Ir a sección 3</a>
+    </section>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+    </div>
+    <section id="seccion3">
+        <a href="#seccion1">Volver al inicio</a>
+    </section>
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+    </div>
+    <!--Esto hará que exista un movimiento de scroll entre cada sección-->
+
+                                    <!--Imagenes-->
+<!--Como recomendación de SEO se sugiere ser breves y no colocar caracteres especiales en los nombres de las imagenes-->
+<img src="imagenes/snacks.jpg" alt="snacks" title="comida rápida"><!--Esta etiqueta sirve para colocar una imagen en tu documento html-->
+<!--El atributo src sirve para coloca la ruta donde se almacena la imagen y el atributo alt es para colocar una
+breve descripción de la imagen (sirve en caso de que haya un problema para cargar la imagen). Existe un tercer
+atributo ques title sirve para decirle al buscador que tipo de imagen es en este caso una imagen de "comida rápida"-->
+
+<!--Se pueden colocar enlaces en las imagenes, para que cuando el usuario le de clic lo redirija a una ruta que se haya seleccionado-->
+<a href="http://www.sushiroll.com.mx/" target="_blank" >
+    <img src="imagenes/sushi.jpg" alt="sushi" title="Sushi Roll">
+</a>
+<!--Con este ejemplo se podrá dar clic en la imagen del sushi y te mandará a la página oficial de sushi roll, y aparecerá 
+en una nueva pestaña-->
+                                <!--Etiqueta inline y Etiqueta en bloque-->
+
+<img src="imagenes/pollo.jpg" alt="pollo asado" title="Pollo" width="300px">
+<img src="imagenes/pollo.jpg" alt="pollo asado" title="Pollo" width="300px">
+
+<!--la etiqueta img es una estiqueta de tipo inline, quiere decir que una se colocará al lado de la otra -->
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, officiis.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eveniet sapiente, sint aspernatur perspiciatis assumenda.</p>
+
+<!--En cambio la etiqueta p es una estiqueta de tipo bloque. Ver la guia si quieres saber que tipo de etiqueta es la que desees.-->
+
+                                                    <!--Listas-->
+
+</body>
+</html>
+ 
