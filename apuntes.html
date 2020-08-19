@@ -5,6 +5,7 @@
     <title>Mi primera web</title>
 </head>
 <body>
+    <h2>Encabezados</h2>
                                 <!--Encabezado-->
     <h1>Este es un titulo</h1> <!--Este titulo se debe de usar uno solo por página-->
     <h2>Este es un titulo</h2> <!--Todos los demas des pueden repetir-->
@@ -13,6 +14,7 @@
     <h5>Este es un titulo</h5>
     <h6>Este es un titulo</h6>
     <!--Etiquetas de texto-->
+    <h2>Etiquetas de texto</h2>
     <p>Hola <strong>Estoy aprendiendo</strong> a maquetar con HTML</p>
     <!--
         <b> = Te hace el texto en "negritas"
@@ -27,6 +29,7 @@
     -->
 
                             <!--Atributos; id o class-->
+    <h2>Atributos: id o class</h2>
     <!--
         Se utilizan para darle estilos con CSS o alguna funcionalidad con Javascript.
         Ejemplo: -->
@@ -48,6 +51,7 @@
     -->
 
                                 <!--Enlaces-->
+    <h2>Enlaces</h2>
     <!--Se tiene el atributo href = que es donde colocará la url donde se mandará el enlce
     Tambien exite otro atributo llamado target que con la opción _blank se abre el enlace en una nueva pestaña del navegador -->
     <a href="https://www.google.com" target="_blank">Ir a Google</a>
@@ -191,6 +195,7 @@
     <!--Esto hará que exista un movimiento de scroll entre cada sección-->
 
                                     <!--Imagenes-->
+<h2>Imagenes</h2>
 <!--Como recomendación de SEO se sugiere ser breves y no colocar caracteres especiales en los nombres de las imagenes-->
 <img src="imagenes/snacks.jpg" alt="snacks" title="comida rápida"><!--Esta etiqueta sirve para colocar una imagen en tu documento html-->
 <!--El atributo src sirve para coloca la ruta donde se almacena la imagen y el atributo alt es para colocar una
@@ -204,6 +209,7 @@ atributo ques title sirve para decirle al buscador que tipo de imagen es en este
 <!--Con este ejemplo se podrá dar clic en la imagen del sushi y te mandará a la página oficial de sushi roll, y aparecerá 
 en una nueva pestaña-->
                                 <!--Etiqueta inline y Etiqueta en bloque-->
+<h2>Etiqueta Inline y Etiqueta en bloque</h2>
 
 <img src="imagenes/pollo.jpg" alt="pollo asado" title="Pollo" width="300px">
 <img src="imagenes/pollo.jpg" alt="pollo asado" title="Pollo" width="300px">
@@ -216,6 +222,48 @@ en una nueva pestaña-->
 <!--En cambio la etiqueta p es una estiqueta de tipo bloque. Ver la guia si quieres saber que tipo de etiqueta es la que desees.-->
 
                                                     <!--Listas-->
+<h2>Listas</h2>
+<!--Existen dos tipo de listas las ordenas con la etiqueta ol y las desordenadas con la etiqueta ul-->
+<ol> <!--Esta es una lista Ordenada-->
+    <li>Elemento 1</li> <!--La estiqueta li ayuda a colocar elementos a la lista-->
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ol>
+<ul> <!--Esta es una lista desordenada.-->
+    <li>Elemneto 1</li> <!--La etiqueta li al igual que en las listas ordenadas ayudarán a colocar los elementos en la lista desordenada-->
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+
+<!--Se pueden anidar listas en una etiqueta li pueden ser listas ol o ul ejemplo:-->
+
+<ol>
+    <li>Elemento 1 
+        <ul>
+        <li>Sub Elemento 1</li>
+        <li>Sub Elemento 1
+            <ol>
+                <li>Sub Elemento del Sub Elemento 1</li>
+                <li>Sub Elemento 2 del Sub Elemento 1</li>
+            </ol>
+        </li>
+        </ul>
+    </li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ol>
+<!--También se le pueden colocar links a las etiquetas ejemplo: -->
+
+<ul> 
+    <li><a href="contacto.html" target="_blank">Contacto</a></li> 
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+
+
+
+
+
 
 </body>
 </html>
