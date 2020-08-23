@@ -259,8 +259,69 @@ en una nueva pestaña-->
     <li>Elemento 2</li>
     <li>Elemento 3</li>
 </ul>
+<!--Formularios-->
+<h2>Formulario</h2>
 
+<form> <!--En esta etiqueta estará contenido nuestro formulario, para poder armarlo requerimos de otras etiquetas que estaremos viendo-->
+<label> Tu nombre </label> <input type="text" placeholder="Ejemplo: Pamela"> <br><!--Con esta etiqueta se crea un campo de tipo texto ha dicha etiqueta también se le puede agregar un atributo llamado placeholder-->
+<!--Con "placeholder" se puede agregar una pequeña leyenda como instrucción al campo de texto-->
+<!--Con la etiqueta label se le puede colocar un texto antes de la etiqueta -->
+<!--Las etiquetas label e input son etiquetas inline y por eso se colocan una al lado de la otra, para que se puedan colocar en forma de bloque hay dos opciones
+con br que es salto de linea o con la etiqueta div (es la mejor opcion)-->
+<label> Tu nombre </label> <br> <!--Esta es la opcion con br-->
+<input type="text" placeholder="Ejemplo: Pamela"> <br> 
 
+<div><!--Esta es la opcion con div-->
+    <label> Tu nombre </label>
+</div> 
+<div>
+    <input type="text" placeholder="Ejemplo: Pamela">
+    <input type="number" placeholder="123456"> <!--Sugerencia probar todos los tipos de input para saber de que va cada uno-->
+</div> 
+<!--aparte de input esta la etiqueta select que ayuda a crear opciones desplegables ejemplo-->
+<h3>Cómo nos conociste</h3>
+<div>
+    <select>
+        <option value="Email">Email</option>
+        <option value="Telefono">Telefono</option>
+        <option value="Redes Sociales">Redes Sociales</option>
+    </select>
+</div>
+
+<!--Existe un input para selecionar llamado radio ejemplo:-->
+<h3>Elije un producto</h3>
+<div>
+    <input type="radio" id="leche" name="producto">
+    <label for="leche">Leche</label>
+    <input type="radio" id="cafe" name="producto">
+    <label for="cafe">Café</label>
+    <input type="radio" id="limonada" name="producto">
+    <label for="limonada">Limonada</label>
+</div>
+<!--Otro input conocido es el de submit-->
+<div>
+    <input type="submit" value="Enviar"> 
+    <!--con el atributo value le daremos el nombre al boton en este caso enviar y se mostrará en pantalla-->
+</div>
+
+<!--Para que funcionen mejor nuestros formularios sería bueno probar los siguientes atributos-->
+<div>
+    <label>Nombre</label> <input type="text" placeholder="nombre" required> <!--Con el atributo required hace que ese input sea obligatorio de llenar en el formulario-->
+    <input type="submit" value="Enviar"> <!--Si le das clic en enviar y esta vacio el campo de nombre, te arrojará una advertencia de llenar el campo-->
+</div>
+<!--Otro input que se puede agregar es el text area-->
+<div>
+    <textarea name="" id="" cols="30" rows="10"></textarea> <!--Veras que se habrá creado una caja de texto donde podrá colocar un texto más grande -->
+</div>
+<!--Se puede crear una agrupación de campos con la etiqueta fielset-->
+<!--Esto se verá agrupado en un espacio uno al lado del otro-->
+<fieldset>
+    <legend>Nuestro formulario</legend>
+    <input type="text" placeholder="Escribe tu nonbre">
+    <input type="email" placeholder="Escribe tu correo">
+    <input type="date" placeholder="Escribe tu cumpleaños">
+</fieldset>
+</form>
 
 
 
