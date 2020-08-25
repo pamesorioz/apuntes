@@ -1,8 +1,10 @@
+<!--Instrucciones para usar los apuntes. En el repositorio encontrarás este archivo y otro archivo llamado index.html donde encuentrarás
+la estructura basica de html y podrás pegar las secciones de cada apunte, para que las veas en una manerá más ordenada-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera web</title>
+    <title>Apuntes de HTML</title>
 </head>
 <body>
     <h2>Encabezados</h2>
@@ -63,7 +65,7 @@
     <!--Pero los enlaces también te pueden mandar a correos para que puedas mandar un correo.
         este es el siguiente ejemplo:
     -->
-    <a href="mailto:pamesorio@gmail.com">Dirección Correo</a>
+    <a href="mailto:contacto@pamesorioz.com">Dirección Correo</a>
     <!--Te abre un gestor de correo, que tenga instalada la persona en su computadora-->
     <!--
         Con los enlaces tambien puedes moverte en la misma página, para eso haremos el siguiente ejemplo.
@@ -208,6 +210,7 @@ atributo ques title sirve para decirle al buscador que tipo de imagen es en este
 </a>
 <!--Con este ejemplo se podrá dar clic en la imagen del sushi y te mandará a la página oficial de sushi roll, y aparecerá 
 en una nueva pestaña-->
+
                                 <!--Etiqueta inline y Etiqueta en bloque-->
 <h2>Etiqueta Inline y Etiqueta en bloque</h2>
 
@@ -221,7 +224,8 @@ en una nueva pestaña-->
 
 <!--En cambio la etiqueta p es una estiqueta de tipo bloque. Ver la guia si quieres saber que tipo de etiqueta es la que desees.-->
 
-                                                    <!--Listas-->
+                                                    
+                                                        <!--Listas-->
 <h2>Listas</h2>
 <!--Existen dos tipo de listas las ordenas con la etiqueta ol y las desordenadas con la etiqueta ul-->
 <ol> <!--Esta es una lista Ordenada-->
@@ -259,7 +263,9 @@ en una nueva pestaña-->
     <li>Elemento 2</li>
     <li>Elemento 3</li>
 </ul>
-<!--Formularios-->
+                                                                
+
+                                                                <!--Formularios-->
 <h2>Formulario</h2>
 
 <form> <!--En esta etiqueta estará contenido nuestro formulario, para poder armarlo requerimos de otras etiquetas que estaremos viendo-->
@@ -323,9 +329,71 @@ con br que es salto de linea o con la etiqueta div (es la mejor opcion)-->
 </fieldset>
 </form>
 
+                                                                    <!--Secciones-->
+<h2>Secciones</h2>
 
+<div></div> <!--Es una etiqueta de contenedor de contenido, es una etiqueta de bloque   -->
+<!--No es una etiqueta semantica, solo cumple su función de contenedor pero las secciones si son semanticas-->
 
+<main></main><!--Esta seccion sirve para colocar el contendio principal de la página web, es una sección muy importante
+y solo debe de hacer una sección main por página -->
+<section></section><!--Sirve para crear secciónes en los contenido de la página y poder dividir-->
+<header></header><!--Aquí se coloca el logotipo, datos importantes que querramos mostrar en la parte de arriba de la página
+vienen el menú desplegable-->
+<footer></footer><!--Este es el pie de la página, aca viene los derechos de autor, las redes sociales, información de contacto, o el cierre de la página
+Al igual que en main, solo debe de haber un dolo footer por página-->
+<nav></nav><!--Esta etiqueta sirve para hacer el menú, osea el menú de la página debe de estar dentro de esta etiqueta.-->
+<aside></aside><!--Esta etiqueta sirve para poner un bloque en un lado de la página web, como colocar una barra lateral con alguna información-->
+<article></article><!--Esta etiqueta normalmente se utiliza para poner aparte de las otras etiquetas como main o footer, no es tan importante
+pero se necersita colocar, como un bloque de comentatrios, o de ultimas noticias-->
 
+<!--La estructura en código sería de la siguiente manera:-->
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Apuntes de HTML</title>
+</head>
+<body>
+  <header>
+      <nav>
+      </nav>    
+  </header>
+    <main>
+        <section>
+            <article>
+            </article>
+            <article>
+            </article>    
+        </section>
+    </main>
+    <footer>
+    </footer>    
+</body>
+</html>
+-->
+
+<!--Se cargará una imagen al repositorio para que se puedan ver de manera gráfica las secciones que normalmente se encuentran en una página web-->
+
+                                                            <!--Inserción con etiqueta iframe-->
+<h2>Iframe</h2>
+<iframe src="https://dev.to/pamesorioz" frameborder="0" width="600px" height="315px"></iframe> <!--Esta etiqueta ayuda a insertar un video de Yotube o una página web dentro de otra.-->
+                                                                    <!--Colocar un video-->
+
+<h2>VIDEOS</h2>
+
+<video src="/video/lavado.mp4"></video><!--Recuerda que el atributo src es para colocar la ruta donde se encuentra el archivo que se va a mostrar-->
+<!--Si ejecutas el navegador solo con el src, te darás cuenta que no hay un boton de play para que el video corra, es por eso que se necesita de un atributo más-->
+<!--Para que se vea mejor le colocaremos los atributos width y height (Es recomendado no colocarlos en el html, sino en CSS pero con fines explicativos los colocamos en HTML)-->
+<video src="/video/lavado.mp4" width="600px" height="600px"></video> <!--Aquí ya cambio de tamaño y se ve un poco mejor-->
+<!--Pero aun no se puede reproducir el video, para eso necesitas del atributo controls loop-->
+<video src="/video/lavado.mp4" width="600px"heigh="600px" controls loop></video> <!--Aquí ya saldría el botón de play y podrías reproducri el video-->
+<!--Si también lo deseas puedes colocarle una miniatura a tu video como en Youtube eso se logra con el atributo: poster-->
+<video src="/video/lavado.mp4" width="600px"height="600px" controls loop poster="/imagenes/cover-lavado.jpg"></video> <!--Aquí podrás ver, que el cover se colocó y que cuando le des play al video se va reproducir-->
+
+                                            <!--Existe también la etiqueta de audio, en ella podrás insertar audio en tu página web.-->
+<h2>Audio</h2>
+<audio src="/Audio/audio.mp3" controls loop ></audio> <!--Al igual que en video se necesita de controls para que puedas reproducir los audios en la págoina web.-->
 </body>
 </html>
  
