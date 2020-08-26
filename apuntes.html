@@ -1,10 +1,22 @@
 <!--Instrucciones para usar los apuntes. En el repositorio encontrarás este archivo y otro archivo llamado index.html donde encuentrarás
 la estructura basica de html y podrás pegar las secciones de cada apunte, para que las veas en una manerá más ordenada-->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Apuntes de HTML</title>
+<!--Como tip para que no tengas que escribir toda la estructura básica de html te recomiendo que coloque en VSCode un signo de admiración (!) y tabulador (Tab) y el escribirá la estructura básica-->
+<!DOCTYPE html> <!--Esta etiqueta es una de la princilaples ya que en ella se da la versión del HTML que se usará en este caso es HTML5. Siempre debes de colocar esta etiqueta-->
+<html lang="es"> <!--Dentro de esta etiqueta viene todo el documento, con la etiqueta html inicia y acaba tu página web.
+El atributo lang es para colocar el idioma en el que esta la página en este caso es Español, pero puede ser el que tu necesites-->
+<head> <!--Esta etiqueta representa la cabeza de la página web, la mayoria de las etiquetas que se coloque en ella no son visibles para los usuarios humanos, pero si son visibles
+para los bots de los buscadores o el navegador-->
+    <meta charset="UTF-8"> <!--Con esta etiqueta se coloca la codificación de nuestro documento, para que se puyedan ver los acentos, y las Ñ--> 
+    <meta name="viewport" content="width=divice-width, initial-scale=1,0"> <!--Esta etiqueta sirve para que se vea correctamente el CSS de la página-->
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon"> <!--En esta etiqueta podrás colocar tu favicon que es un pequeño icono que se ve en la pestaña del navegador-->
+    <meta name="description" content="Estos son los apuntes de HTML de Pame"> <!--Esta etiqueta sirve para dar una descripción del sitio web, que normlamente eso aparece en los buscadores-->
+    <!--Con estas siguientes 3 etiquetas puedes hacer que al compartir la URL de tu página en una red social se vea un recuadro, con una imagen, un titulo y una descripcioón-->
+    <meta property="og:image" content="imagenes/snacks.jpg"> 
+    <meta property="og:description" content="Los apuntes de HTML de Pame">
+    <meta property="og:title" content="Los mejores apuntes de html">
+    <title>Apuntes de HTML</title> <!--En esta etiqueta viene el nombre de tu página, y es visible en la pestaá del navegador.-->
+    <link rel="stylesheet" href="style.css"> <!--Con esta etiqueta se llamá al archivo CSS, te será de ayuda cuando coloque los apuntes CSS-->
+    <script src="main.js"></script> <!--Así es como se hace una llamada a un documento JavaScript, si quieres saber como funciona JS espera a mis apuntes-->
 </head>
 <body>
     <h2>Encabezados</h2>
