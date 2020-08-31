@@ -1,16 +1,23 @@
 <!--Instrucciones para usar los apuntes. En el repositorio encontrarás este archivo y otro archivo llamado index.html donde encuentrarás
 la estructura basica de html y podrás pegar las secciones de cada apunte, para que las veas en una manerá más ordenada-->
 <!--Como tip para que no tengas que escribir toda la estructura básica de html te recomiendo que coloque en VSCode un signo de admiración (!) y tabulador (Tab) y el escribirá la estructura básica-->
+
 <!DOCTYPE html> <!--Esta etiqueta es una de la princilaples ya que en ella se da la versión del HTML que se usará en este caso es HTML5. Siempre debes de colocar esta etiqueta-->
 <html lang="es"> <!--Dentro de esta etiqueta viene todo el documento, con la etiqueta html inicia y acaba tu página web.
 El atributo lang es para colocar el idioma en el que esta la página en este caso es Español, pero puede ser el que tu necesites-->
+
 <head> <!--Esta etiqueta representa la cabeza de la página web, la mayoria de las etiquetas que se coloque en ella no son visibles para los usuarios humanos, pero si son visibles
 para los bots de los buscadores o el navegador-->
-    <meta charset="UTF-8"> <!--Con esta etiqueta se coloca la codificación de nuestro documento, para que se puyedan ver los acentos, y las Ñ--> 
+    
+<meta charset="UTF-8"> <!--Con esta etiqueta se coloca la codificación de nuestro documento, para que se puyedan ver los acentos, y las Ñ--> 
     <meta name="viewport" content="width=divice-width, initial-scale=1,0"> <!--Esta etiqueta sirve para que se vea correctamente el CSS de la página-->
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon"> <!--En esta etiqueta podrás colocar tu favicon que es un pequeño icono que se ve en la pestaña del navegador-->
+    <!--También se pueden colocar distintos favicon para todo tipo de dispositivo.-->
+    <link rel="apple-touch-icon-precomposed" href="favicon.ico" type="image/x-icon"> <!--La resolución de los favicon va a variar por la resolución de las pantallas de los otros dispositico (con sulta que otros existen-->
     <meta name="description" content="Estos son los apuntes de HTML de Pame"> <!--Esta etiqueta sirve para dar una descripción del sitio web, que normlamente eso aparece en los buscadores-->
     <meta name="author" content="Pamela Osorio"> <!--Con esta etiqueta puedes colocar el autor de la página web.-->
+    <meta name="keywords" content="apuntes, html, maquetacion web, inicios"> <!--Con esta etiqueta puedes colocar palabras claves que serán de ayuda para que te puedan encontrar en Google.
+    Si bien ya casi Google no se centra en las palabras claves, es una buena práctica de SEO tener palabras clave en tu página web-->
     <!--Con estas siguientes 3 etiquetas puedes hacer que al compartir la URL de tu página en una red social se vea un recuadro, con una imagen, un titulo y una descripcioón-->
     <meta property="og:image" content="imagenes/snacks.jpg"> 
     <meta property="og:description" content="Los apuntes de HTML de Pame">
@@ -23,6 +30,13 @@ para los bots de los buscadores o el navegador-->
     <meta property="twitter:description" content="Los apuntes de HTML de Pame">
     <meta property="twitter:title" content="Los mejores apuntes de html">
     <!--Con el fin de que al compartir tu URL se pueda ver de mejor forma en twitter.-->
+    <!--Un meta que ayuda a dar instrucciones al los buscadores es el meta robot-->
+    <meta  name="robot" content="index"/><!--Esto le dice al buscador que incluya la página en su lista de busquedas no es necesaria pero es buena prácitca de SEO colocarla-->
+    <!--En caso contrario de que no quieras que el buscador haga el rastreo de la página, puedes usar el meta noindex-->
+    <meta name="robots" content="noindex"/>
+    <!--Tomando en cuenta por defecto los buscadores como google rastrea lás páginas en este caso si tienes link y no quieres que sean rastreados entonces puede usar el siguiete meta -->
+    <meta name="robots" content="nofollow">
+
 </head>
 <body>
     <h2>Encabezados</h2>
